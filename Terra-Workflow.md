@@ -31,7 +31,7 @@ Once you've loaded the methods into your workspace, you can go ahead and run the
 
 ![progress](images/progress.png)
 
-9. Wait until the job completes and download output files from the execution directory as needed. For ```Freyja_FASTQ``` you'll find the de-mixed results in the ```\[mysamplename\]\_freyja_demixed.tsv``` file. Download files by clicking downward arrow symbol on the right. 
+9. Wait until the job completes and download output files from the execution directory as needed. For ```Freyja_FASTQ``` you'll find the de-mixed results in the ```[mysamplename]_freyja_demixed.tsv``` file. Download files by clicking downward arrow symbol on the right. 
 
 ![downloadresult](images/downloadresult.png)
 

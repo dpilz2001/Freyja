@@ -1,12 +1,39 @@
 To run Freyja using a web interface, we recommend using the Terra ecosystem. If you haven't used Terra before, it's pretty easy to set things up.  You'll need to:
-1. Sign up for a Terra account at https://terra.bio/
-2. Set up billing: All accounts get $300 in free credit (see [here](https://support.terra.bio/hc/en-us/articles/360046295092), which will allow you to run the pipeline on a ton of samples
-3. Create a workspace
-4. Select desired method from [dockstore](https://dockstore.org/search?entryType=workflows&search=freyja). Clicking on the Terra icon on the right hand side will take you to Terra, where you can import the method into your workspace. 
+1. Sign up for a Terra account at https://app.terra.bio/
+2. Set up billing: All accounts get $300 in free credit (see [here](https://support.terra.bio/hc/en-us/articles/360046295092)), which will allow you to run the pipeline on a ton of samples
+3. Create a [workspace](https://app.terra.bio/#workspaces).
+    - Click the "+" in the top left, and give the workspace a name (anything will do)
+
+![image](images/workspaces.png)
+
+4. Select the required methods from [dockstore](https://dockstore.org/search?entryType=workflows&search=freyja). Clicking on the Terra button on the right hand side will take you to Terra and allow you to import the method into your workspace. 
+![image](images/dockstore.png)
  - [Freyja_FASTQ](https://dockstore.org/workflows/github.com/theiagen/public_health_viral_genomics/Freyja_FASTQ:main?tab=info): takes you from raw data to de-mixed output in a single step (combines the ```freyja variants``` and ```freyja demix``` steps described in the README). 
- - [Freyja_Plot](https://dockstore.org/workflows/github.com/theiagen/public_health_viral_genomics/Freyja_Plot:main?tab=info): takes in output files from Freyja_FASTQ and renders plots of virus lineage fractions (using the ```freyja plot``` function described in the README)
+ - [Freyja\_Plot](https://dockstore.org/workflows/github.com/theiagen/public_health_viral_genomics/Freyja_Plot:main?tab=info): takes in output files from Freyja_FASTQ and renders plots of virus lineage fractions (using the ```freyja plot``` function described in the README)
 
-Once you've loaded the methods into your workspace, you can go ahead and run the workflow on your data. You'll first want to run the Freyja_FASTQ method on some raw data. If you don't have any available, you can test the method out using [this one](test.fastq.gz).  
-4. Load in data and run the pipeline!
+ ![image](images/import.png)
 
-(still under construction)
+Once you've loaded the methods into your workspace, you can go ahead and run the workflow on your data. You'll first want to run the Freyja_FASTQ method on some raw data. If you don't have raw data on hand, you can test the method out using these:[testR1.fastq.gz](data/testR1.fastq.gz), [testR2.fastq.gz](data/testR2.fastq.gz).  
+
+5. Add all of the data you need to your workspace. This is done by clicking the "Data" tab, and then the "Files" option on the left side of the page. Files can then be added by dragging files (one at a time) into the window or by clicking the "+" sign in the bottom right. If you're not sure which files you need, proceed to steps 6-7 to see the required input data. 
+
+![uploads](images/dataupload.png)
+
+
+6. Inside of your new workspace, go to the workflows tab and select the workflow you want to run.
+![workflows](images/workflowoptions.png)
+
+7. Add all of the necessary files to be used in the workflow, add any options you want, save, and click "Run Analysis" to start the workflow. Note that the filename needs to be given in quotes as shown below:
+
+![settingup](images/setup.png)
+
+8. Add any comments you need and click "Launch". You'll be brought to a progress window. All output files will appear in the execution directory (open folder icon, under "Links"). 
+
+![progress](images/progress.png)
+
+9. Wait until the job completes and download output files from the execution directory as needed. For ```Freyja_FASTQ``` you'll find the de-mixed results in the ```\[mysamplename\]\_freyja_demixed.tsv``` file. Download files by clicking downward arrow symbol on the right. 
+
+![downloadresult](images/downloadresult.png)
+
+
+

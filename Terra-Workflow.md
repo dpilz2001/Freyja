@@ -19,6 +19,7 @@ Once you've loaded the methods into your workspace, you can go ahead and run the
 
 ![uploads](images/dataupload.png)
 
+Note: many files can be uploaded at once using the Terra [data uploader](https://app.terra.bio/#upload). For more details, check out this [protocol](https://www.protocols.io/view/uploading-data-files-to-terra-byxjpxkn.html). 
 
 6. Inside of your new workspace, go to the workflows tab and select the workflow you want to run.
 ![workflows](images/workflowoptions.png)

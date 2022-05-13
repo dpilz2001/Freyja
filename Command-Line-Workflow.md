@@ -15,7 +15,7 @@ Before we perform demixing, it's a good idea to make sure our list of lineage ba
 
 which will save these files in freyja's ```data``` folder. This can be a bit tricky to find in your conda environment, so if you want a local copy (good to keep around in case you want to compare results with past/future barcode libraries) you can also add in the ```--outdir ``` option, and specify the location where you want to put the barcode library. This just needs to be done once (per session -- new lineages are being added every day), and then we can proceed to the de-mixing step. Demixing can be performed using the command 
 
-```freyja demix variants_files/test.variants.tsv depth_files/test.depth --output demix_files/test.output```
+```freyja demix variants_files/test.variants.tsv depth_files/test.depth --output demix_files/test.output --confirmedonly```
 
 
 If you want to use your local barcodes set, you'll need to use the ```--barcodes ``` option and specify the path of your local barcodes. Note: While the output of ```freyja variants``` will not change over time, the output of  ```freyja demix``` depends strongly on the list of known lineage barcodes. The method will assign the closest lineage (in an edit distance sense) to what's in the data, but if a more representative lineage is identified the assignment will shift to the more representative lineage. 

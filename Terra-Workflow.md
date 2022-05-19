@@ -13,7 +13,7 @@ To run Freyja using a web interface, we recommend using the Terra ecosystem. If 
 
  ![image](images/import.png)
 
-Once you've loaded the methods into your workspace, you can go ahead and run the workflow on your data. You'll first want to run the Freyja_FASTQ method on some raw data. If you don't have raw data on hand, you can test the method out using these:[testR1.fastq.gz](data/testR1.fastq.gz), [testR2.fastq.gz](data/testR2.fastq.gz).  
+Once you've loaded the methods into your workspace, you can go ahead and run the workflow on your data. You'll first want to run the Freyja_FASTQ method on some raw data. 
 
 5. Add all of the data you need to your workspace. This is done by clicking the "Data" tab, and then the "Files" option on the left side of the page. Files can then be added by dragging files (one at a time) into the window or by clicking the "+" sign in the bottom right. If you're not sure which files you need, proceed to steps 6-7 to see the required input data. 
 

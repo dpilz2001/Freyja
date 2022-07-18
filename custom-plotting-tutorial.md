@@ -85,6 +85,8 @@ For more complex groupings, relationships between lineages are made available vi
 ```python 
 
 windowSize = 14 # set window size for rolling average if using daily interval 
+
+# replace "example" with whatever you'd like to call the output file
 outputFn = 'example_' + queryType + '.pdf'
 
 colors0 = []# if empty, use cmap

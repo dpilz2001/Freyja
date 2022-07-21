@@ -71,11 +71,11 @@ df_abundances = df_abundances.fillna(0)
 df_abundances = df_abundances.groupby(pd.Grouper(freq=interval)).mean()
 ```
 
-Optional: Add in custom groupings as desired. For example, if we want to group all BA.4 lineages, we can adjust   
+Optional: Add in custom groupings as desired. For example, if we want to group all AY lineages, we can adjust   
 
 ```python
-df_abundances['BA.4.X'] = df_abundances[df_abundances.columns.str.startswith('BA.4')]
-df_abundances = df_abundances[df_abundances.columns.str.startswith('BA.4') & ~(df_abundances.columns=='BA.4.X')]
+df_abundances['AY.X'] = df_abundances.loc[:,df_abundances.columns.str.startswith('AY.')].sum(axis=1)
+df_abundances = df_abundances.drop(columns= df_abundances.columns[df_abundances.columns.str.startswith('AY.') & ~(df_abundances.columns=='AY.X')])
 ```
 For more complex groupings, relationships between lineages are made available via cov-lineages [here](https://github.com/cov-lineages/lineages-website/blob/master/data/lineages.yml) and can be grouped accordingly. 
 

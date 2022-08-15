@@ -5,5 +5,5 @@ Contents:
 1. [Command Line Workflow](https://github.com/andersen-lab/Freyja/wiki/Command-Line-Workflow)
 2. [Terra Workflow](https://github.com/andersen-lab/Freyja/wiki/Terra-Workflow)
 3. [Custom plotting tutorial](https://github.com/andersen-lab/Freyja/wiki/custom-plotting-tutorial)
-
+4. [Barcode analysis tutorial](https://github.com/andersen-lab/Freyja/wiki/lineage-barcode-extract)
 Let us know if there's anything else you'd like to see!
